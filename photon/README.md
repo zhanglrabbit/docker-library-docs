@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `i386` builds of [the `photon` official image](https://hub.docker.com/_/photon) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,9 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.0`, `3.0-20201120`, `latest`](https://github.com/vmware/photon-docker-image/blob/4f244ee4fbe90bf4d2ff80e551aa2246b85d206b/docker/Dockerfile)
--	[`1.0`, `1.0-20201120`](https://github.com/vmware/photon-docker-image/blob/0d2825366faafebd949ae906f4e39eaa66e3409a/docker/Dockerfile)
--	[`2.0`, `2.0-20201120`](https://github.com/vmware/photon-docker-image/blob/b51096273e549aae4d3d1e08b35f8484494dc778/docker/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `i386` ARCHITECTURE
+
+[![i386/photon build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/i386/job/photon.svg?label=i386/photon%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/i386/job/photon/)
 
 # Quick reference (cont.)
 
@@ -59,7 +61,7 @@ See the [FAQ](http://vmware.github.io/photon/assets/files/photon_faqs.pdf) for m
 
 ## How to use these images
 
-Photon OS images are intended for use in the **FROM** field of an application's `Dockerfile`. For example, to use VMware Photon 1.0GA as the base of an image, specify `FROM photon:1.0GA`.
+Photon OS images are intended for use in the **FROM** field of an application's `Dockerfile`. For example, to use VMware Photon 1.0GA as the base of an image, specify `FROM i386/photon:1.0GA`.
 
 ## Support
 
